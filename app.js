@@ -589,3 +589,18 @@ function cargarProductosOfertas() {
     })
     .catch(error => console.error('Error al cargar productos en oferta:', error));
 }
+
+
+
+window.addEventListener('scroll', function() {
+  var footer = document.querySelector('footer');
+  var footerPosition = footer.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 0.5;
+
+
+  if(footerPosition < screenPosition){
+      footer.classList.add('footer-appear');
+  } else {
+      footer.classList.remove('footer-appear');
+  }
+});
