@@ -3,8 +3,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  background-image: url('https://files.oaiusercontent.com/file-VRQfq7mRk5hUfbayLiAK9loC?se=2023-11-15T21%3A23%3A37Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D40c86f94-dd68-476d-9770-635d30315ac9.webp&sig=JxBfgBK1D4JoDI9TIXMj8ImmxZkikTs7%2BeqRZPt65zs%3D');
+  background-color: #c0eff6;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -43,18 +42,19 @@ html, body {
 
 /* Estilos para el encabezado (header) */
 header {
-  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Gradiente azul */
+  background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%); /* Aplica el gradiente */
   color: white;
   text-align: center;
   padding: 1rem 0; /* Aumentamos el padding superior e inferior */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave para darle profundidad */
 }
 
 /* Estilos generales para el encabezado (nav) */
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribuye el espacio */
+  flex-direction: row;
+  justify-content: space-around; /* Distribuye el espacio */
   padding: 0 10%; /* Aumentamos el padding para no pegar los elementos a los bordes */
 }
 
@@ -72,8 +72,8 @@ nav .hamburger-icon img {
 
 /* Estilos específicos para la imagen de inicio */
 nav .inicio img {
-  width: 60px; /* Tamaño de la imagen de inicio (más grande) */
-  height: 60px;
+  width: 40px; /* Tamaño de la imagen de inicio (más grande) */
+  height: 40px;
 }
 
 /* Estilos específicos para la barra de búsqueda */
@@ -82,20 +82,6 @@ nav .search-bar {
   text-align: center; /* Centra el contenido horizontalmente */
 }
 
-nav .search-bar input {
-  width: 100px; /* Ancho del campo de búsqueda reducido */
-  padding: 5px;
-  border: none; /* Quita el borde del campo de búsqueda */
-  border-radius: 20px; /* Agrega bordes redondeados */
-}
-
-nav .search-bar button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
 
 /* Estilos específicos para los enlaces "Ingresar" y "Carrito" */
 nav .acciones a {
@@ -152,12 +138,14 @@ h2 {
 }
 
 footer {
-  background-color: #6f9fd8;
+  background: linear-gradient(to top, #4facfe 0%, #00f2fe 100%); /* Aplica el gradiente */
   color: white;
   text-align: center;
   padding: 1rem 0;
   font-size: 0.8rem;
   position: relative;
+  position: relative;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.3); /* Sombra hacia arriba */
 }
 
 .footer-content {
@@ -253,7 +241,7 @@ nav .search-bar button {
 
 /* Estilos para el ícono de carrito */
 .carrito-link img {
-  width: 30px; /* Ajusta el tamaño del ícono según tus necesidades */
+  width: 50px; /* Ajusta el tamaño del ícono según tus necesidades */
   height: auto;
 }
 
@@ -267,18 +255,6 @@ nav .search-bar button {
   right: 10px;
   font-size: 0.8rem; /* Ajustamos el tamaño de la fuente del contador */
 }
-
-/* Estilos para el contenedor del carrito */
-.carrito-container {
-  position: relative;
-}
-
-/* Estilos para el ícono de carrito */
-.carrito-link img {
-  width: 30px; /* Ajusta el tamaño del ícono según tus necesidades */
-  height: auto;
-}
-
 
 
 
@@ -403,7 +379,7 @@ nav .search-bar button {
   left: -250px;
   width: 250px;
   height: 100%;
-  background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%); /* Aplica el gradiente */
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Aplica el gradiente */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
   transition: left 0.3s ease;
   display: flex; /* Usamos flexbox para alinear las categorías */
@@ -442,7 +418,7 @@ nav .search-bar button {
   position: absolute;
   top: 0;
   left: 100%; /* Esto posicionará el submenú justo al final del menú desplegable */
-  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Gradiente horizontal para los submenús */
+  background-color: #00f2fe;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
@@ -522,8 +498,7 @@ body {
 }
 
 body {
-  background-color: #f4f4f4; /* Color de fondo suave */
-  background-image: url('https://files.oaiusercontent.com/file-VRQfq7mRk5hUfbayLiAK9loC?se=2023-11-15T21%3A23%3A37Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3D40c86f94-dd68-476d-9770-635d30315ac9.webp&sig=JxBfgBK1D4JoDI9TIXMj8ImmxZkikTs7%2BeqRZPt65zs%3D'); 
+  background-color: #ffffff; /* Color de fondo suave */
   background-size: cover; /* Cubre todo el fondo */
   background-attachment: fixed; /* La imagen de fondo es fija al hacer scroll */
 }
@@ -534,10 +509,7 @@ nav .search-bar button {
   background-color: #4facfe; /* Botón con color sólido que contraste con el gradiente */
 }
 
-nav .carrito-link img {
-  width: 50px; /* Ajuste del tamaño del ícono del carrito */
-  height: 50px;
-}
+
 
 nav .carrito-container, nav .acciones a {
   display: flex;
@@ -545,15 +517,17 @@ nav .carrito-container, nav .acciones a {
   gap: 0.5rem; /* Espacio entre íconos y texto */
 }
 
-nav .search-bar button {
-  background-color: #4facfe; /* Botón con color sólido que contraste con el gradiente */
-}
+
 
 nav .search-bar input, nav .search-bar button {
   border: 2px solid white; /* Agrega un borde para definir mejor los elementos */
   border-radius: 20px; /* Bordes redondeados */
   padding: 0.5rem; /* Aumentamos el padding para que sean más altos */
   margin: 0 0.5rem; /* Añadimos un margen horizontal */
+}
+
+nav .search-bar button{
+  border: 2px solid rgb(0, 213, 255);
 }
 
 .loader {
@@ -598,15 +572,51 @@ nav .search-bar input, nav .search-bar button {
   padding: 50px;
   box-sizing: border-box;
   width: 100%; /* Asegura que el div ocupe todo el ancho */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 1); /* Agrega sombreado */
 }
+
 
 #titulo-categoria{
   color:white;
   margin: 0;
 }
 @media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
+  
+  
+  
+  .hamburguesa-icon img {
+    width: 25px;
+    height: auto;
+    
   }
+  
+  nav .search-bar input {
+    width: 100px; /* Ancho del campo de búsqueda aumentado (aproximadamente el doble) */
+  }
+
+  .carrito-link img {
+    width: 30px; /* Ajusta el tamaño del ícono según tus necesidades */
+    height: auto;
+  }
+
+  nav .inicio img {
+    width: 30px; 
+    height: 30px;
+  }
+
+  .menu-desplegable {
+    width: 45%;
+  }
+
+}
+
+/* Define la animación */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* Aplica la animación a tus productos */
+.producto {
+  animation: fadeIn 2s ease-in-out;
 }
